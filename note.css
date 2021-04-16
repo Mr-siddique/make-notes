@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #7BDAF3; */
+    background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: "ubuntu","poppins",sans-serif;
+    margin:0;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+header{
+    width:100%;
+    height:5rem;
+    text-align: center;
+}
+.notes-container .write-notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:200px;
+}
+.notes-container{
+    width:80%;
+    height:auto;
+    margin:auto ;
+}
+.notes-container .write-notes textarea{
+    width:100%;
+    height:100%;
+    font-family: inherit;
+    outline: none;
+    font-size: 1rem;
+    border:none;
+}
+.notes-container .btn-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.notes-container .submit{
+    /* margin-left:40%; */
+    width:200px;
+    height:50px;
+    border:0;
+    border-radius: 5px;
+    font-size:1rem;
+    background-color: rgb(211, 208, 208);
+    cursor:pointer;
+}
+.notes-container .submit:hover{
+    background-color: rgb(216, 170, 162);
+}
+.display-notes{
+    margin-top:1rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.display-notes .note{
+    width: 40%;
+    height: 200px;
+    background-color: #fff;
+    padding: 5px;
+    margin:5px;
+    border-radius: 5px;
+    font-family: inherit;
+    overflow-y:scroll;
+}
+.display-notes .note button{
+    background-color:transparent;
+    border:none;
+}
+button{
+    outline:none;
+    cursor:pointer;
+}
